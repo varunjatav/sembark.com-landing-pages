@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url('https://img.veenaworld.com/wp-content/uploads/2018/08/Himachal-feature-image.jpg') ;
+  background-size: cover;
+  background-position: center;
+ 
+}
+.free{
+  background-color: #329a8c;
+}
+.package-btn{
+  margin-top: 6rem;
+  padding:1rem;
+  background-color: #329a8c;
+  border-radius: 2rem;
+}
+
+.form > div{
+  width:80%
+}
+
+.form input{
+  width:100%;
+}
+
+.google__icon__wrapper {
+  border: 1px solid #ea4335;
+  background: #ea4335;
+}
+.social__icon__wrapper {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  color: #ecf5fb;
+}
+
+.tripadvisor__icon__wrapper {
+  border: 1px solid #34e0a1;
+  background: #34e0a1;
+}
+.fb__icon__wrapper {
+  border: 1px solid #1b74e4;
+  background: #1b74e4;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-pulse:hover {
+  animation: pulse 2s infinite;
+}
+
+.journeys{
+  background-image: url('https://pyt-images.imgix.net//pyt-images.imgix.net/images/activity/Card%205.png?w=270&h=360&fit=crop&dpr=1&auto=format%2Ccompress%2Cenhance&q=40');
+  
+}
+
+
+.hoverImg:hover {
+  transform: scale(1.1);
+  transition: transform .8s ease-in;
+  -webkit-transition: transform .8s ease-in;
+}
+
+.itinary {
+  /* padding: 10px 0; */
+  margin: 0;
+  border-bottom: solid 1px #cfcfcf;
+  border-top: solid 1px #cfcfcf;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.itinary ul li {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+}
+
+.itinary ul li div img {
+  width: 50px;
+}
+.single .package_img {
+  margin-top: 20px;
+}
+
+.confused_text h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 40px
+}
+
+.confused_btn {
+  height: 100%;
+}
+
+.package_name {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  min-height: 20px;
+  color: #2e3042;
+  font-size: 18px;
+
+}

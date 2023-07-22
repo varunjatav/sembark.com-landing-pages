@@ -1,0 +1,187 @@
+---
+title: Sembark.com
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+
+    <link rel="stylesheet" href="{{ '/main.css' | url }}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .hide {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      .hide {
+        display: block;
+        float: right;
+      }
+    }
+  </style>
+  <body class="font-sans">
+    <nav
+      class="bg-gray-700 p-5 flex justify-between text-white font-bold items-center"
+    >
+      <div class="hidden md:block">
+        <img
+          src="https://tourism-himachal.com/images/tourism-himachal-brand-logo.jpg"
+        />
+      </div>
+      <div class="hidden lg:flex gap-5 text-white font-bold">
+        <h4>Best Packages</h4>
+        <h4>Honeymoon Packages</h4>
+        <h4>Family Packages</h4>
+        <h4>Hidden Gems</h4>
+      </div>
+      <div class="hidden lg:flex gap-2 text-white font-bold">
+        <div class="flex items-center gap-1">
+          <img src="https://tourism-himachal.com/images/call-info.png" />
+          <h4>+91-9318524888</h4>
+        </div>
+        <div class="flex items-center gap-1">
+          <img src="https://tourism-himachal.com/images/msg-info.png" />
+          <h4>info@tourism-himachal.com</h4>
+        </div>
+      </div>
+      <div class="hide">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </nav>
+
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    {{ content | safe }}
+
+    <!-- Footer container -->
+    <footer
+      class="mt-10 bg-gray-700 text-center dark:bg-neutral-600 lg:text-left text-white-500"
+    >
+      <div class="container p-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3">
+          <!--First links section-->
+          <div class="mb-6">
+            <h5
+              class="mb-4 font-normal text-sm uppercase text-white dark:text-neutral-200"
+            >
+              Support
+            </h5>
+
+            <ul class="mb-0 list-none space-y-4">
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Downloads</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Tutorials</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200">APIs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Integrations</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Release Notes</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200">FAQs</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Second links section-->
+          <div class="mb-6">
+            <h5
+              class="mb-4 font-normal text-sm uppercase text-white dark:text-neutral-200"
+            >
+              COMPANY
+            </h5>
+
+            <ul class="mb-0 list-none space-y-4">
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200">blogs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Terms & Policies</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!--Third links section-->
+          <div class="mb-6">
+            <h5
+              class="mb-4 font-normal text-sm uppercase text-white dark:text-neutral-200"
+            >
+              contact us
+            </h5>
+
+            <ul class="mb-0 list-none space-y-4">
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#!" class="text-white dark:text-neutral-200">Status</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Copyright section-->
+      <div
+        class="p-4 text-center text-white dark:bg-neutral-700 dark:text-neutral-200"
+      >
+        © 2023 Copyright:
+        <a
+          class="text-white dark:text-neutral-400"
+          href="https://tailwind-elements.com/"
+          >Tailwind Elements</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

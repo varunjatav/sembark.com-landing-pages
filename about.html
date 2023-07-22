@@ -1,0 +1,101 @@
+---
+layout: layouts/root.njk
+---
+
+
+
+<div class="flex justify-center items-center m-auto bg-gray-50 py-10 px-6">
+  <div class="flex-1">
+    <h3 class="text-4xl lg:text-5xl font-semibold mb-8">Contact Us</h3>
+    <p class="mb-2 text-lg">Please feel free to contact us for your query</p>
+    <div
+      style="display: flex; gap: 3px; text-align: center; align-items: center"
+    >
+      <div class="w-10 h-10 inline-flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+          />
+        </svg>
+      </div>
+      <p style="font-weight: 600">Contact@Sembark.com</p>
+    </div>
+    <div class="text-gray mt-10">
+      <p class="text-small">OFFICE ADDRESS</p>
+      <p class="text-small w-2/3">
+        1, Plot No 177A, Shyam Enclave Sirsi, Jhotwara Jaipur, Rajasthan, India
+        - 302034
+      </p>
+    </div>
+  </div>
+  <div class="flex-1">
+    <div class="rounded-2xl border-gray-500 border w-50 py-14 px-10">
+      <form action="" class="space-y-6">
+        <div>
+          <label>Company Name</label>
+          <input
+            class="form-input rounded-md w-full border-gray-400"
+            type="text"
+            placeholder="North-East Holidays"
+          />
+        </div>
+        <div>
+          <label>Your Name</label>
+          <input
+            class="form-input rounded-md w-full border-gray-400"
+            type="text"
+            placeholder="Anand Singh"
+          />
+        </div>
+        <div class="flex gap-2">
+          <div>
+            <label>Contact Email</label>
+            <input
+              class="form-input rounded-md w-full border-gray-400"
+              type="text"
+              placeholder="Username@mail.com"
+            />
+          </div>
+
+          <div>
+            <label>Contact Number</label>
+            <input
+              class="form-input rounded-md w-full border-gray-400"
+              type="phone"
+              placeholder="9999999999"
+            />
+          </div>
+        </div>
+        <div>
+          <label>
+            More Information
+            <span style="color: rgb(189, 189, 189)">(Optional)</span>
+          </label>
+          <textarea
+          placeholder="Describe yourself here..."
+            rows="2"
+            cols="51"
+            {# class="form-input rounded-md w-full border-gray-400"  #}
+          >
+         
+          </textarea>
+        </div>
+
+        <button
+          class="w-full bg-indigo-900 hover:bg-indigo-700 text-white font-semibold text-lg rounded-lg h-16"
+        >
+          Let's Talk
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
